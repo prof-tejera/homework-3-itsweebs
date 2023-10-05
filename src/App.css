@@ -1,7 +1,7 @@
 .App-component {
   border: 1px solid;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin: 40px;
+  margin-bottom: 40px;
 }
 
 .App-header {
@@ -9,11 +9,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  font-size: 24px;
+  padding-top: 24px;
 }
 
 .App-content {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
 }
