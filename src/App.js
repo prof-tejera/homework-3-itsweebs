@@ -24,7 +24,7 @@ const App = () => {
       </div>
 
       <div className="App-component">
-        <header className="App-header">Pager component (TODO)</header>
+        <header className="App-header">Pager component</header>
         <div className="App-content">
           <Pager />
         </div>

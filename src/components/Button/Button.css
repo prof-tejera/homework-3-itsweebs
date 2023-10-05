@@ -1,4 +1,4 @@
-.Default-button {
+/** .Default-button {
   border: none;
   color: black;
   padding: 15px 32px;
@@ -17,4 +17,41 @@
 
 .Default-button:hover {
   background-color: rgb(71, 145, 241);
+}
+*/
+.Default-button {
+  cursor: pointer;
+  padding: 8px 24px;
+  background-color: #eeeeee;
+  color: #000000;
+  border: 2px solid #eeeeee;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 300;
+  outline: none;
+  margin:4px;
+}
+
+.Default-button:disabled {
+  opacity: 0.5; 
+}
+
+.Default-button-active {
+  background-color: #8746a8;
+  color: #fff;
+  border-color: #8746a8;
+}
+
+.Default-button:hover {
+  background-color: #e8e4ed;
+  color: #8746a8;
+  border-color: #e8e4ed;
+}
+
+#arrow {
+  font-size: 24px;
+}
+
+#arrow:hover{
+  border-radius: 50%;
 }

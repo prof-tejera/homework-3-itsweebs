@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "components/Button/Button";
 import "./Pager.css";
 
 const Pager = () => {
@@ -15,7 +16,7 @@ const Pager = () => {
       numbers.push(
         <button
           key={i}
-          active={activePage === (i)}
+          active={activePage===(i)}
           onClick={() => handleClick(i)}
         >
           {i}
@@ -28,18 +29,18 @@ const Pager = () => {
 
   return (
     <div className="pager">
-      <button
+      <button id="arrow"
         onClick={() => handleClick(activePage - 1)}
         disabled={activePage === 1}
       >
-        Previous
+        &#8249;
       </button>
       {pageNumbers()}
-      <button
+      <button id="arrow"
         onClick={() => handleClick(activePage + 1)}
         disabled={activePage === 10}
       >
-        Next
+        &#8250;
       </button>
     </div>
   );

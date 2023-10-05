@@ -1,0 +1,30 @@
+.pager {
+    display: inline-block;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 4px 12px;
+    background-color: #fff;
+    color: #000000;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #e8e4ed;
+    color: #543873;
+    border-color: #e8e4ed;
+  }
+  
+  button.active {
+    background-color: #80669d;
+    color: #fff;
+    border-color: #80669d;
+  }
+
+  #arrow {
+    font-size: 24px;
+  }
