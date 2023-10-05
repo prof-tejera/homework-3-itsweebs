@@ -16,21 +16,21 @@ const RadioButtons = () => {
         checked={activeType === "Apple"}
         onChange={() => handleClick("Apple")}
       />
-      <label htmlFor="apple">Apple</label>
+      <label id="radiolabels" htmlFor="apple">Apple</label>
       <input
         type="radio"
         id="orange"
         checked={activeType === "Orange"}
         onChange={() => handleClick("Orange")}
       />
-      <label htmlFor="orange">Orange</label>
+      <label id="radiolabels" htmlFor="orange">Orange</label>
       <input
         type="radio"
         id="banana"
         checked={activeType === "Banana"}
         onChange={() => handleClick("Banana")}
       />
-      <label htmlFor="banana">Banana</label>
+      <label id="radiolabels" htmlFor="banana">Banana</label>
     </div>
   );
 };
