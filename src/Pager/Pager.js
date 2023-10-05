@@ -3,10 +3,11 @@ import Button from "components/Button/Button";
 import "./Pager.css";
 
 const Pager = () => {
-  const [activePage, setActivePage] = useState(null);
+  const [activePage, setActivePage] = useState();
 
   const handleClick = (type) => {
     setActivePage(type);
+    console.log(typeof activePage)
   };
 
   const pageNumbers = () => {
@@ -25,6 +26,7 @@ const Pager = () => {
     }
 
     return numbers;
+    
   };
 
   return (

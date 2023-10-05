@@ -3,34 +3,31 @@ import "./RadioButtons.css";
 
 const RadioButtons = () => {
   const [activeType, setActiveType] = useState(null);
+  const Fruits = ["Apple", "Orange", "Banana"];
 
   const handleClick = (type) => {
     setActiveType(type);
   };
 
+  const radioButton = (fruit) => {
+    const fruitType = fruit.map((i) => {
+      return (
+        <div key={i} id="radio">
+          <input
+            type="radio"
+            id={i}
+            checked={activeType === i}
+            onChange={() => handleClick(i)}
+          />
+          <label id="radiolabels" htmlFor={i}>{i}</label>
+        </div>
+      );
+    });
+    return fruitType;
+  };
   return (
     <div id="radio">
-      <input
-        type="radio"
-        id="apple"
-        checked={activeType === "Apple"}
-        onChange={() => handleClick("Apple")}
-      />
-      <label id="radiolabels" htmlFor="apple">Apple</label>
-      <input
-        type="radio"
-        id="orange"
-        checked={activeType === "Orange"}
-        onChange={() => handleClick("Orange")}
-      />
-      <label id="radiolabels" htmlFor="orange">Orange</label>
-      <input
-        type="radio"
-        id="banana"
-        checked={activeType === "Banana"}
-        onChange={() => handleClick("Banana")}
-      />
-      <label id="radiolabels" htmlFor="banana">Banana</label>
+      {radioButton(Fruits)}
     </div>
   );
 };
