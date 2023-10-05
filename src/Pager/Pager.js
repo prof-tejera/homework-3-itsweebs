@@ -15,7 +15,7 @@ const Pager = ({ totalPages = 10 }) => {
       numbers.push(
         <button
           key={i}
-          active={activePage === i ? "active" : ""}
+          className={activePage === i ? "active" : ""}
           onClick={() => handleClick(i)}
         >
           {i}

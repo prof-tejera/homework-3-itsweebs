@@ -15,14 +15,14 @@
   
   button:hover {
     background-color: #e8e4ed;
-    color: #543873;
+    color: #8746a8;
     border-color: #e8e4ed;
   }
   
-  button:active {
-    background-color: #80669d;
+  button.active {
+    background-color: #8746a8;
     color: #fff;
-    border-color: #80669d;
+    border-color: #8746a8;
   }
 
   #arrow {
