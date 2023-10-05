@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import Button from "components/Button/Button";
 import "./Pager.css";
 
 const Pager = () => {
-  const [activePage, setActivePage] = useState();
+  const [activePage, setActivePage] = useState(1);
 
   const handleClick = (type) => {
     setActivePage(type);
-    console.log(typeof activePage)
   };
 
   const pageNumbers = () => {
@@ -17,7 +15,7 @@ const Pager = () => {
       numbers.push(
         <button
           key={i}
-          active={activePage === (i)}
+          active={activePage === i ? "active" : ""}
           onClick={() => handleClick(i)}
         >
           {i}
