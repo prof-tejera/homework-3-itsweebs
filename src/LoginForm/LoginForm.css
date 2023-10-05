@@ -25,3 +25,19 @@
     border:none;
     padding: 0px;
   }
+  #inputlabels:hover {
+    color: #000;
+  }
+input {
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 8px;
+}
+#password {
+  margin-bottom: 16px;
+}
+input[type=email], input[type=password] {
+  width: 100%;
+}

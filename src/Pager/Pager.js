@@ -17,7 +17,7 @@ const Pager = () => {
       numbers.push(
         <button
           key={i}
-          active={activePage===(i)}
+          active={activePage === (i)}
           onClick={() => handleClick(i)}
         >
           {i}
@@ -26,7 +26,7 @@ const Pager = () => {
     }
 
     return numbers;
-    
+
   };
 
   return (
