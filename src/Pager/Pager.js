@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Pager.css";
 
-const Pager = () => {
+const Pager = ({ totalPages = 10 }) => {
   const [activePage, setActivePage] = useState(1);
 
   const handleClick = (type) => {
@@ -11,7 +11,7 @@ const Pager = () => {
   const pageNumbers = () => {
     const numbers = [];
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= totalPages; i++) {
       numbers.push(
         <button
           key={i}
